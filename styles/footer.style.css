@@ -1,0 +1,14 @@
+#footer {
+    height: 40px;
+    width: 100%;
+    /* position: absolute; */
+    /* bottom: 0; */
+    background-color: #1d0202;
+    z-index: 20;
+}
+
+#footer footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgb(243, 238, 232);
+}

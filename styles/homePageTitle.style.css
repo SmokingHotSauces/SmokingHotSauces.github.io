@@ -1,0 +1,114 @@
+#homePageTitle {
+    flex-grow: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    /* height: 700px; */
+    /* max-height: 100vh; */
+    /* height: 100%; */
+    border: 1px dotted blue;
+}
+
+/* define the backgroun image */
+
+#homePageTitle:before {
+    content: ' ';
+    /* display: block; */
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    flex-grow: 1;
+    opacity: 0.5;
+    background-image: url("../images/pepers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* title and pepper images */
+
+#homePageTitle h1, #homePageTitle i {
+    position: relative;
+    z-index: 4;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#homePageTitle div#pepper-images {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+/* background color overlay */
+
+#homePageTitle #color-overlay {
+    display: block;
+    position: absolute;
+    top: 55px;
+    z-index: 2;
+    width: 100%;
+    height: inherit;
+    opacity: 0.5;
+    background-color: #2b1d0e;
+}
+
+
+/* BUUTON */
+
+#homePageTitle div#buttons {
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#homePageTitle #buttons .button-container {
+    z-index: 5;
+    width: 350px;
+    height: 100px;
+    background-color: #380b0f;
+    transition: background-color 1s;
+}
+
+#homePageTitle #buttons .button-container:hover {
+    background-color: #61141c;
+}
+
+#homePageTitle #buttons button {
+    width: inherit;
+    height: inherit;
+    border: 2px solid rgb(243, 238, 232);
+    color: rgb(243, 238, 232);
+    position: relative;
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+    background-color: transparent;
+    font-size: 1.05rem;
+}   
+
+#homePageTitle #buttons button:active {
+    transform: translate(10px, 10px);
+}
+
+/* BOTTOM BUTTONS */
+
+#homePageTitle div#bottom-buttons {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#homePageTitle #bottom-buttons .button-container {
+    background-color: #380b0f
+}
+
+#homePageBottom #bottom-buttons button {
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border: 2px solid rgb(243, 238, 232);
+    color: rgb(243, 238, 232);
+}

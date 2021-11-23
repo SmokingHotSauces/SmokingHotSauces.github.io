@@ -1,0 +1,40 @@
+#navBar {
+    padding: 0 5vw;
+    height: 55px;
+    background-color: #1d0202;
+/* place nav menu in vertical center */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+#navBar nav {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    height: inherit;
+}
+
+#navBar nav a {
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 1s;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#navBar nav a:hover {
+    background-color: rgb(60, 61, 63);
+    border-left: 1px rgb(243, 238, 232) solid;
+    border-right: 1px rgb(243, 238, 232) solid;
+}
+
+#navBar a.active {
+    background-color: #380b0f;
+    border-left: 2px rgb(243, 238, 232) solid;
+    border-right: 2px rgb(243, 238, 232) solid;
+}
