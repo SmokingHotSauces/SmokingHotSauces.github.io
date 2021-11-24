@@ -1,10 +1,8 @@
 #footer {
-    height: 40px;
     width: 100%;
-    /* position: absolute; */
-    /* bottom: 0; */
     background-color: #1d0202;
     z-index: 20;
+    flex: 0 1 40px;
 }
 
 #footer footer {
