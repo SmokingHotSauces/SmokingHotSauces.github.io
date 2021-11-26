@@ -4,9 +4,9 @@
     let navbarID = 'navBar';
     let footerSnip = './snippets/footer.snippet.html';
     let footerID = 'footer';
-    let bodySnip;
-    let contentSnip;
-    let contentID;
+    let bodySnip;    // the snippet that contains html div's that make up the body
+    let contentSnip; // snippet that contains the detailed Html of the body
+    let contentID;   // id of the div in bodySnip that contentSnip is placed in
 
     let loc = window.location.pathname;
     switch (loc) {
@@ -16,7 +16,7 @@
             contentID = 'homePageTitle';
             break;
         case '/products.html':
-            bodySnip = './snippets/pageBody/products.snippet.html'
+            bodySnip = './snippets/pageBody/products.snippet.html';
             contentSnip = '';
             contentID = 'products';
             break;
