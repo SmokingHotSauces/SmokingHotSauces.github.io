@@ -31,6 +31,13 @@ function insertProducts (productData, store) {
                     resolve();
 
                 };
+
+                addReq.onerror = (e) => {
+
+                    console.log('skipped ' + product.ID);
+
+                    resolve();
+                }
             });            
         }
     });
